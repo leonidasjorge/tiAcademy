@@ -1,2 +1,2 @@
 # tiAcademy
- Repositorio do curso "TI Academy - 2021".
+ Repositório do curso "TI Academy - 2021".
