@@ -1,0 +1,68 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.center-hv {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.tela {
+    background-color: #37474F;
+    border-radius: 5px;
+    justify-content: space-between;
+    height: 180px;
+    width: 320px;
+    margin: 3px;
+}
+
+.rodape, .topo {
+    height: 40px;
+    width: 100%;
+    padding: 3px;
+    align-items: center;
+}
+
+.bola {
+    background-color: #039BE5;
+    border-radius: 100%;
+    height: 80px;
+    width: 80px;
+    font-size: 42px;
+    color: #FFF;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.tela > .topo > .mic {
+    width: 35px;
+    height: 35px;
+    background-color: #455A64;
+    border-radius: 100%;
+    cursor: pointer;
+    color: #FFF;
+}
+
+.rodape > label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+}
