@@ -10,7 +10,7 @@
 -- Professor: Marcelo Weihmayr da Silva.
 
 - Ciclo 3/4: Node.js
--- Professor: 
+-- Professor: Erinaldo Sanches Nascimento.
 
 - Ciclo 4/4: React
 -- Professor: 
