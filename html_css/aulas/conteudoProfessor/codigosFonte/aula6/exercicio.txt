@@ -1,0 +1,15 @@
+1. Crie uma pasta chamada exercício
+2. Na pasta exercício crie uma página index com toda a estrutura html (header, main e footer)
+2.1 No header acrescente uma tag de título nível 1 que deverá conter o texto: BARBATANA
+2.2 O heaader deverá ter uma altura de 50 pixel.
+3. Dê uma dimensão de largura para ambos as tags de 80% e deixe-os centralizados no documento
+4. No header coloque uma altura fixa de 50 pixels e escreva “Minha página html”
+6. Crie um article para conter um todos os paragráfos.
+5. Acrescente 8 parágrafos preenchidos com “Lorem” os parágrafos devem deve ocupar 100% da largura 
+e sua altura será indefinida. 
+No início do aticle adicione um título de nível 2 com o título de: PESCARIA que deverá estar 
+na cor verde.
+6. Atribua uma margem no topo de cada parágrafo de 10px.
+7. O último parágrafo deverá estar na cor vermelha. 
+
+ 

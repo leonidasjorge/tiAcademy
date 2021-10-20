@@ -1,0 +1,9 @@
+Na pasta chamada de exercicio
+Crie uma página html com o nome de exercicio4 que irá conter as tags de cabeçalho, 
+principal e de rodapé. 
+Crie uma tag de parágrafo, que irá conter o “Lorem Ipsum” em seu contexto interno.
+A tag de parágrafo deverá ter uma altura de 100 pixel e uma largura de 500 pixel.
+Estilize para que a tag de parágrafo tenha a borda lateral esquerda com 3 pixels na cor preta 
+e a borda lateral direita com 1 pixel também na cor preta. 
+
+

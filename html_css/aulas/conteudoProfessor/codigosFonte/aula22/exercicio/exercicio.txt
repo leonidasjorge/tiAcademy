@@ -1,0 +1,2 @@
+1. Crie uma lista desordenada com 5 elementos.
+2. Remova os bullets e permita que sua renderização seja visualidade na horizontal

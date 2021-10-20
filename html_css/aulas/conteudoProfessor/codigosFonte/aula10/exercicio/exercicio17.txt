@@ -1,0 +1,3 @@
+Crie uma div com a dimensão de 100 pixels por 100 pixels 
+Defina um background com a cor de sua preferência
+Posicione esta div no canto inferior do seu viewport do lado direito
