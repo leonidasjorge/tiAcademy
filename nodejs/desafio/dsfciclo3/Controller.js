@@ -882,6 +882,33 @@ app.get('/pedido/:id/excluir', async(req, res) => {
     });
 });
 
+// Excluir produto
+app.get('/produto/:id/excluir', async(req, res) => {
+
+    // Verifica se o produto não existe
+    if (!await produto.findByPk(req.params.id)) {
+        return res.status(400).json({
+            erro: true,
+            message: "Erro: Produto não existe."
+        });
+    };
+
+    // Se o produto existir, faz a exclusão do produto
+    await produto.destroy({
+        where: {id: req.params.id}
+    }).then(function() {
+        return res.json({
+            error: false,
+            message: "Produto excluído com sucesso!"
+        });
+    }).catch(function(erro) {
+        return res.status(400).json({
+            error: true,
+            message: "Erro: Impossível excluir produto."
+        });
+    });
+});
+
 // Excluir servico
 app.get('/servico/:id/excluir', async(req, res) => {
 
