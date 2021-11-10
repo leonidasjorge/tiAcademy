@@ -1,0 +1,64 @@
+React = Ciclo 4
+
+1º
+Acessar o site do react:
+
+https://pt-br.reactjs.org/
+
+Nota:
+- React é uma biblioteca JavaScript para construção de interfaces de usuário.
+
+2º
+Dentro do diretório onde tem o "ciclo3", abrir o "Git Bash Here" e executar o comando:
+
+npx create-react-app my-app
+
+Nota:
+- No lugar de "my-app", apagar e colocar o nome do projeto.
+-- Neste caso, será colocado o nome "ciclo4".
+- Vai demorar um pouco para ser criado. Tem de aguardar.
+
+3º 
+Após criar o projeto, acessar a pasta através da mesma tela do "Git Bash Here", por meio do comando:
+
+cd ciclo4
+
+4º
+Depois que acessar o diretório do "ciclo4", executar o comando:
+
+code .
+
+Nota:
+- Este comando irá abrir o Visual Studio Code com o "workspace" à partir do "ciclo4".
+
+5º
+Através do terminal do Visual Studio Code, executar o comando:
+
+npm start
+
+Nota:
+- Este comando irá abrir a página da aplicação (http://localhost:3000/).
+
+6º
+No "workspace" à partir do "ciclo4", na pasta "public", acessar o arquivo "index.html".
+
+Nota:
+- Neste arquivo, posso fazer algumas mudanças, como por exemplo, alterar o título da minha aplicação.
+-- Alterei o título da minha aplicação, através da tag <title> para "Services TI Academy".
+
+7º
+Agora, no "workspace" à partir do "ciclo4", na pasta "src", acessar o arquivo "App.js".
+
+Nota:
+- Neste arquivo, posso fazer algumas mudanças, como por exemplo, alterar o texto da tag <p>.
+-- Alterei o texto através da tag <p> para "Olá, Mundo!".
+
+8º
+Dentro desta pasta "src", não vou precisar de algumas coisas. Vou deixar somente os arquivos:
+- App.css
+- App.js
+- index.js
+- setupTests-js
+
+9º
+O arquivo "index.js" da pasta "src", remover os comentários e o que tiver abaixo dele.

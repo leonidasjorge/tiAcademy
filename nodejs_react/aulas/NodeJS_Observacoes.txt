@@ -1,0 +1,258 @@
+NodeJS = Ciclo 3
+
+1º Criar o diretório onde será desenvolvido o projeto;
+
+*
+
+2º Dentro do diretório criado, executar o comando:
+
+npm init
+
+Nota:
+- O comando acima irá criar um novo projeto.
+
+*
+
+3º Estou usando o Visual Studio Code;
+Após o comando anterior, executar o comando:
+
+code .
+
+Nota:
+- O comando acima irá abrir o Visual Studio Code, com as informações já dentro do diretório criado.
+
+*
+
+/* ============================================= */
+/* ========= INSTALAR AS DEPENDÊNCIAS ========= */
+/* =========================================== */
+
+4º À partir de agora, irei instalar as dependências/frameworks:
+
+- Dependência 1:
+Pesquisei no google: "express node js"
+
+-- Site: https://expressjs.com/pt-br/
+--- Comando: npm install express --save
+
+Nota:
+- O comando acima, deve ser executado dentro do terminal do Visual Studio Code.
+- O "express" é um framework para aplicativos web, que utiliza o "Node.js", e, ele permite que a gente utilizando o express, podemos trabalhar com "rotas".
+-- O "express" é fundamental para trabalhar com rotas.
+
+***
+
+- Dependência 2:
+Pesquisei no google: "cors node js"
+
+-- Site: https://expressjs.com/en/resources/middleware/cors.html
+--- Comando: npm install cors
+
+Nota:
+- O comando acima, deve ser executado dentro do terminal do Visual Studio Code.
+- "Middleware" porque faz o meio campo, caminho entre todas as etapas.
+- O "cors" é um framework que tem a ver com camadas, banco de dados, troca de informações entre as etapas de "views", "models", entre as camadas.
+-- O "cors" é quem permite trazer estas informações.
+
+***
+
+- Dependência 3:
+Pesquisei no google: "sequelize orm"
+-- Site: https://sequelize.org/
+--- Comando: npm install --save sequelize
+
+Nota:
+- O comando acima, deve ser executado dentro do terminal do Visual Studio Code.
+- O "sequelize" é um framework para trabalhar com banco de dados.
+- O sequelize irá fazer o mapeamento do banco de dados.
+- Para trabalhar com banco de dados, é preciso ter o sequelize instalado.
+
+Após instalar o "sequelize" através do comando acima, devo instalar o "drive" que será usado de acordo com o "banco de dados" que irei utilizar; no caso, o banco de dados "MySQL":
+
+-- Site: https://sequelize.org/master/manual/getting-started.html
+- Comando: npm install --save mysql2
+
+***
+
+- Dependência 4:
+Pesquisei no google: "sequelize cli"
+
+-- Site: https://www.npmjs.com/package/sequelize-cli
+--- Comando: npm install --save-dev sequelize-cli
+
+Nota:
+- O comando acima, deve ser executado dentro do terminal do Visual Studio Code.
+- Este framework irá permitir fazer as "migrações"; tudo o que for desenvolvido no Visual Studio Code, a gente vai conseguir migrar para o banco de dados através dele.
+
+***
+
+- Dependência 5:
+Pesquisei no google: "sequelize cli"
+
+-- Site: https://www.npmjs.com/package/sequelize-cli
+--- Comando: npm install --save-dev sequelize-cli
+
+Nota:
+- O comando acima, deve ser executado dentro do terminal do Visual Studio Code.
+- Este framework irá permitir fazer as "migrações"; tudo o que for desenvolvido no Visual Studio Code, a gente vai conseguir migrar para o banco de dados através dele.
+
+Após instalar o "sequelize cli" através do comando acima, devo inicializar ele, através do comando:
+
+-- Site: https://sequelize.org/master/manual/migrations.html
+- Comando: npx sequelize-cli init
+
+Nota:
+- O comando acima, irá criar toda uma "estrutura" dentro do repositório onde está sendo desenvolvido o projeto.
+
+-- Esta estrutura, foi criada 4 pastas:
+
+--- "config": Gera um arquivo chamado "config.json".
+Este arquivo mostra as 3 fases que o projeto pode estar (desenvolvimento, teste ou produção).
+Inicialmente, o projeto está na fase de "desenvolvimento".
+
+--- "migrations": Esta pasta contém os arquivos com as informações das tabelas que serão criadas/migradas para o banco de dados.
+
+--- "models": 
+--- "seeders": 
+
+*
+
+/* ========================================== */
+/* ========= CRIAR A BASE DE DADOS ========= */
+/* ======================================== */
+
+5º À partir de agora, irei criar uma base de dados.
+Para isso, é importante que o servidor esteja rodando, em execução.
+
+No momento, estou usando o XAMPP com o "Apache" e o "MySQL" ativados.
+
+*
+
+6º No navegador de internet (Google Chrome), irei acessar o "localhost" e depois, o banco de dados (phpMyAdmin):
+
+http://localhost/phpmyadmin/index.php
+
+Nota:
+- Irei fazer uso do servidor "MySQL" porque foi o driver que instalei na "Dependência 3" do passo "4".
+
+*
+
+7º Agora, irei criar o banco de dados:
+
+- Irei dar um nome ao banco de dados e escolher o "formato" dele.
+-- O formato escolhido foi "utf8_unicode_ci", por motivo dos caracteres, acentuações, específicos da nossa lingua portuguesa.
+--- Após fazer isso, clico no botão "criar".
+
+*
+
+/* ===================================================== */
+/* ========= CRIAR A CAMADA DE MODELO (MODEL) ========= */
+/* =================================================== */
+
+8º Após criar o banco de dados acima, irei criar agora o "modelo de dados".
+- Este modelo de dados será feito dentro do Visual Studio Code.
+
+9º No Visual Studio Code, a primeira coisa a fazer é alterar as informações no arquivo "config.json" da pasta "config"; por exemplo, a fase, usuário do banco de dados, senha do banco de dados, nome do banco de dados, entre outros.
+
+*
+
+10º Depois de colocar as informações do banco de dados acima, irei criar o modelo.
+
+Nota:
+- No manual do Sequelize, tem mais informações de como fazer:
+-- Site: https://sequelize.org/master/manual/migrations.html
+
+*
+
+11º Para criar o modelo, de acordo com as informações de como fazer acima, irei usar o comando:
+
+npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
+
+Nota:
+- No comando acima, irei alterar a palavra "User" pelo nome da tabela que desejo criar no banco de dados.
+-- Como exemplo, estou trocando a palavra "User" pela palavra "Cliente"; letra "C" inicial MAIÚSCULA, e, a palavra no singular.
+
+--- Após pressionar a tecla "enter" para executar o comando acima, na pasta "models" será criado o arquivo "cliente.js" e na pasta "migrations" também será criado outro arquivo com o nome "20211018235618-create-cliente.js"; ambos os arquivos referentes ao "Cliente" do comando acima.
+
+*
+
+12º No arquivo "cliente.js" que está na pasta "models", foi criado um modelo; uma classe chamada "Cliente" dentro de "Model".
+
+- Neste arquivo, em "Cliente.init", irei colocar os atributos da tabela, de acordo com os seus tipos; tudo isso de acordo com o modelo de dados.
+-- Por exemplo:
+
+  Cliente.init({
+    nome: DataTypes.STRING,
+    endereco: DataTypes.STRING,
+    cidade: DataTypes.STRING,
+    uf: DataTypes.STRING,
+    nascimento: DataTypes.DATEONLY,
+    clienteDesde: DataTypes.DATEONLY
+  }
+
+*
+
+13º Irei refazer os passos "11º" e "12º" para todas as tabelas do banco de dados.
+
+*
+
+/* ================================================== */
+/* ========= CONFIGURAR OS RELACIONAMENTOS ========= */
+/* ================================================ */
+
+14º Agora, irei configurar os relacionamentos:
+
+- HasOne = Relação de 1 para 1.
+- BelongsTo = "Pertence à 1". Por exemplo, o "Pedido" pertence à um "Cliente". Relação de 1 ou muitos para 1 (um ou muitos Pedidos 'pertencem' à 1 um cliente)).
+- HasMany = "Tem muitos". Por exemplo, o "Cliente tem 1 ou muitos Pedidos". Relação de 1 para um ou muitos.
+- BelongsToMany = Relação de muitos para muitos. "Pertence a muitos". Toda vez que houver uma relação de muitos para muitos, haverá uma 'terceira' classe entre estas duas classes.
+
+*
+
+/* ============================================================================ */
+/* ========= SUBIR A CAMADA DE MODELO PARA O BANCO DE DADOS/SERVIDOR ========= */
+/* ========================================================================== */
+
+15º Depois de configurar os arquivos das pastas "models" e "migrations", vou exportar os dados que estão na IDE Visual Studio Code para o banco de dados MySQL.
+
+- Farei esta exportação através do comando:
+
+npx sequelize-cli db:migrate
+
+*
+
+/* ===================================================== */
+/* ========= INICIANDO A CAMADA "CONTROLLER" =========  */
+/* =================================================== */
+
+16º À partir de agora, irei iniciar o "CRUD":
+- Create (Inserir)
+- Retrieve (Consultar)
+- Update (Atualizar)
+- Delete (Excluir)
+
+*
+
+17º Agora, instalar a dependência: 
+
+Pesquisei no google: "nodemon npm"
+-- Site: https://www.npmjs.com/package/nodemon
+--- Comando: npm install --save-dev nodemon
+
+Nota:
+- O comando acima, deve ser executado dentro do terminal do Visual Studio Code.
+- O "nodemon" é uma ferramenta que permite que façamos alterações no código, e, automaticamente, estas alterações já subam para o servidor, sem a necessidade de ficar salvando manualmente, sem a necessidade de ficar reiniciando o servidor a todo e qualquer momento, ganhando assim, tempo, produtividade.
+
+*
+
+18º Criar um arquivo chamado "Controller.js" na pasta raiz do projeto, onde tudo começou.
+
+Nota:
+- Este arquivo tem a ver com a camada "Controller" do Modelo de Camadas MVC = Model View Controller.
+
+*
+
+19º Agora, no arquivo Controller, chamar as depências instaladas (express, cors, entre outros).
+
+*
+
