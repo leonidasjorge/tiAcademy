@@ -1,0 +1,31 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 30px;
+}
+
+main > article#elemento-pai {
+    background-color: tomato;
+    height: 100vh;
+    padding: 5px;
+    width: 100vw;
+}
+
+/* main > article#elemento-pai > p#elemento-filho {
+    background-color: coral;
+    font-size: 2em;
+    height: auto;
+    width: 100%;
+} */
+
+main > article#elemento-pai > p#elemento-filho {
+    background-color: coral;
+    font-size: 2rem;
+    height: auto;
+    width: 100%;
+}

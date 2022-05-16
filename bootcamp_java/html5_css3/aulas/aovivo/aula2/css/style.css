@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#btnClicar {
+    background-color: blueviolet;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    height: 60px;
+    width: 220px;
+}
+
+#btnClicar {
+    background-color: red;
+}
+
+#testeDiv {
+    color: red;
+    font-size: 24px;
+}
+
+.corVerde {
+    background-color: green;
+}
+
+.corVermelho {
+    background-color: red;
+}
+
+.sumirAdiv {
+    display: none;
+}
+
+body {
+    background-color: blue;
+}
+
+div {
+    border: 1px solid #000;
+    height: 200px;
+    width: 200px;
+}
+
+div {
+    background-color: orange;
+    height: 300px;
+    width: 300px;
+}
+
+

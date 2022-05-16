@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-border-geral: #CFD8DC;
+    --cor-fonte-titulo: #E53935;
+    --cor-padrao-fonte: #434F55;
+    --fonte-padrao: 'Righteous', cursive, Verdana;
+    font-size: 100%;
+}
+
+.align-center-xy {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.icons-list {
+    font-size: 1.5rem;
+    margin-right: 2px;
+}
+
+.paleta {
+    color: #2E7D32; /* botão */
+    color: #CFD8DC; /* cor da barra superior */
+    color: #434F55; /* fontes */
+    color: #E53935; /* título principal */
+}
+
+a {
+    align-items: center;
+    color: var(--cor-padrao-fonte);
+    font-family: var(--fonte-padrao);
+    font-size: 1.2rem;
+    height: 100%;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+a.go:hover {
+    background-color: var(--cor-fonte-titulo);
+    color: #FFF;
+    transition: 2s; /* tempo para que o efeito "hover" aconteça */
+}
+
+header, main, footer {
+    margin: auto;
+    width: 80%;
+}
+
+header#top-header {
+    border-bottom:1px solid var(--cor-border-geral);
+    height: 60px;
+}
+
+header#top-header h1, header#top-header nav {
+    width: 50%;
+}
+
+header#top-header h1 {
+    align-items: center;
+    color: var(--cor-fonte-titulo);
+    font-family: var(--fonte-padrao);
+    font-size: 2.2rem;
+}
+
+header#top-header nav#menu ul#list-menu {
+    justify-content: flex-end;
+    width: 100%;
+}
+
+header#top-header nav#menu ul#list-menu li.item {
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+}
+
+section#section-cards {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+
+section#section-cards div.card {
+    border: 1px solid var(--cor-border-geral);
+    flex-grow: 1;
+    height: 400px;
+    width: 320px;
+}
+
+section#section-cards div.card figure.card-img-pizza {
+    padding: 2px;
+    width: 100%;
+}
+
+section#section-cards div.card figure.card-img-pizza img.img-pizza {
+    width: 100%;
+}
+
+form.formTamanhoPizza {
+    align-items: center;
+    justify-content: center;
+}
+
+form.formTamanhoPizza label {
+    align-items: center;
+    cursor: pointer;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 2px;
+    width: 30px;
+}
+
+h2.sub-titulo-pizza {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+form.formTamanhoPizza div.content-controles, form.formTamanhoPizza div.controle-form-btn {
+    width: 100%;
+}
+
+div.controle-form-btn {
+    padding: 10px;
+}
+
+div.controle-form-btn .btn {
+    background-color: #2E7D32;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 10px;
+    width: 150px;
+}
+
+footer {
+    background-color: yellow;
+    border-top: var(--cor-border-geral);
+    height: 60px;
+    margin-top: 10px;
+}

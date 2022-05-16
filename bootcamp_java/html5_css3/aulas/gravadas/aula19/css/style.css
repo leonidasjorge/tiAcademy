@@ -1,0 +1,29 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: cornsilk;
+    border: 1px solid royalblue;
+    height: auto;
+    margin: 40px auto;
+    padding: 30px;
+    width: 50vw;
+}
+
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+th, thead {
+    background-color: blueviolet;
+    color: #fff;
+}

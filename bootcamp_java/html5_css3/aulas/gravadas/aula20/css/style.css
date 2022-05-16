@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+}
+
+section#formulario {
+    margin: 30px auto;
+    padding: 5px;
+}
+
+form {
+    height: auto;
+    padding: 2px;
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+    padding: 2px;
+}
+
+label {
+    display: block;
+    height: auto;
+    padding: 2px;
+    width: 100%;
+}
+
+.texto {
+    height: 30px;
+    width: 100%;
+}
+
+
+

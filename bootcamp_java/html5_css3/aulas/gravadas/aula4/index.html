@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4</title>
+</head>
+<style>
+    /*
+        header {
+            border: 1px solid #000;
+            height: 50px;
+            width: 80%;
+        }
+
+        main {
+            border: 1px solid #000;
+            height: auto;
+            width: 80%;
+        }
+
+        main > article {
+            height: auto;
+            width: 100%;
+        }
+
+        footer {
+            border: 1px solid #000;
+            height: 50px;
+            width: 80%;
+        }
+    */
+
+    header, main, footer {
+        border: 1px solid #000;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    header, footer {
+        height: 50px;
+    }
+
+    main, article {
+        height: auto;
+    }
+
+    #ajuste-margem {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    article {
+        width: 100%;
+    }
+
+    .seletor-paragrafo {
+        border-bottom: 2px solid red;
+        border-top: 2px solid red;
+    }
+</style>
+<body>
+    <header>
+        <p>
+            Aqui está meu header.
+        </p>
+    </header>
+    <main id="ajuste-margem">
+        <article>
+            <p class="seletor-paragrafo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eveniet id odio maxime dolorum quisquam? Necessitatibus magni dicta assumenda repellendus, quasi quas temporibus reiciendis qui tenetur eaque, omnis consequatur neque.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eveniet id odio maxime dolorum quisquam? Necessitatibus magni dicta assumenda repellendus, quasi quas temporibus reiciendis qui tenetur eaque, omnis consequatur neque.
+            </p>
+            <p class="seletor-paragrafo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eveniet id odio maxime dolorum quisquam? Necessitatibus magni dicta assumenda repellendus, quasi quas temporibus reiciendis qui tenetur eaque, omnis consequatur neque.
+            </p>
+        </article>
+    </main>
+    <footer>
+        <p>
+            Aqui está meu footer.
+        </p>
+    </footer>
+</body>
+</html>

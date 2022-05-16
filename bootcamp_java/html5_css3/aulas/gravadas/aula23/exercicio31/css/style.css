@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    background-color: darkgoldenrod;
+    margin: 10px auto 10px auto;
+    width: 80%;
+}
+
+header {
+    height: 60px;
+}
+
+main {
+    height: auto;
+}
+
+footer {
+    height: auto;
+}
+
+.ajusteTamanho {
+    background-color: darkolivegreen;
+    height: 30vh;
+}
+
+.content-card > div, footer > div {
+    background-color: darkred;
+    height: 200px;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+section {
+    background-color: darkturquoise;
+    margin: 10px 0 10px 0;
+}
+
+@media screen and (max-width:700px) {
+    body{
+        background-color: black;
+    }
+
+    section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    section.content-card > div {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+}

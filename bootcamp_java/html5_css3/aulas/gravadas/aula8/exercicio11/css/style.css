@@ -1,0 +1,21 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6200EA;
+    border-bottom: 3px solid #000;
+    height: 80px;
+    width: 100%;
+}
+
+header > h1 {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;    
+    width: 80%;
+}

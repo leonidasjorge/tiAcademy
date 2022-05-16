@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffe0b2;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    background-color: #fbe9e7;
+    border: 1px solid #ff8a65;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 30px auto;
+    width: 600px;
+}
+
+div {
+    /* background-color: #5e35b1; */
+    margin: 2px;
+    padding: 10px;
+    width: 100px;
+}
+
+.tamanhoFixo {
+    height: 100px;
+}
+
+header {
+    background-color: blueviolet;
+    height: 60px;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+#ajuste {
+    height: auto;
+    width: 100%;
+}
+
+#content {
+    background-color: chartreuse;
+    height: 100vw;
+    width: 70%;
+}
+
+#barra {
+    background-color: brown;
+    height: 100vw;
+    width: 30%;
+}
+

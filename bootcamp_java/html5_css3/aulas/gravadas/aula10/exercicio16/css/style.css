@@ -1,0 +1,14 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+main > div {
+    background-color: #000;
+    bottom: 0;
+    right: 0;
+    height: 100px;
+    position: absolute;
+    width: 100px;
+}

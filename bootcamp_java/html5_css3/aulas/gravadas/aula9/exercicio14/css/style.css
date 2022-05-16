@@ -1,0 +1,11 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/chess.jpg);
+    background-repeat: repeat-x;
+    background-size: 25%;
+}

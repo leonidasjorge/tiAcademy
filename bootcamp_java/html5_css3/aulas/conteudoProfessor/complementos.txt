@@ -1,0 +1,11 @@
+- Remover fundo de imagens
+	- https://www.remove.bg/pt-br 
+
+- Sites para cores web/aplicaçoes
+
+	- https://color.adobe.com/pt/create/color-wheel
+	- https://paletton.com/
+	- https://material.io/resources/color/
+	
+- Programa para edição de imagens
+	- Gimp - https://www.gimp.org/downloads/

@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+main {
+    background-color: antiquewhite;
+    height: 100vh;
+    width: 100vw;
+}
+
+div#janelaCliente, div#janelaProduto {
+    background-color: chocolate;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    height: 200px;
+    padding: 5px;
+    width: 400px;
+}
+
+div#janelaProduto {
+    background-color: blueviolet;
+}
+
+.al {
+    background-color: brown;
+    border-radius: 100%;
+    color: #FFF;
+    height: 100px;
+    width: 100px;
+}
+
+.center-hv {
+    align-items: center;
+    justify-content: center;
+}
+
+.fechar {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-fim {
+    justify-content: flex-end;
+}
+
+.flex-fim-lateral-direita {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.flex-fim-lateral-esquerda {
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.gap {
+    gap: 10px;
+}
+
+.mostrar {
+    display: block;
+}
+
+.space-uniforme {
+    justify-content: space-between;
+}
+
+.space-uniforme-margin {
+    justify-content: space-around;
+}

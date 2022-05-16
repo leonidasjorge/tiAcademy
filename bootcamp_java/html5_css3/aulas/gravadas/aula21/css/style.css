@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: royalblue;
+}
+
+main {
+    background-color: seashell;
+    border: 2px dotted rebeccapurple;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    height: auto;
+    margin: 50px auto;
+    width: 80%;
+}
+
+h2 {
+    font-size: 0.8em;
+    padding: 5px 0 9px 0;
+}
+
+.borda {
+    border: 1px solid red;
+}
+
+.margem-esquerda {
+    margin-left: 30px;
+}
+
+.remove-bullet {
+    list-style: none;
+}
+
+ol {
+    height: auto;
+    margin: 30px;
+    width: 200px;
+}
+
+li {
+    background-color: skyblue;
+    height: auto;
+    margin: 2px;
+    width: 100%;
+}
+
+div {
+    background-color: springgreen;
+    border-radius: 100%;
+    display: inline-block;
+    height: 200px;
+    margin: 5px;
+    width: 200px;
+}
+
+a {
+    border: 1px solid black;
+    display: block;
+    height: 20px;
+    width: 100%;
+}
