@@ -1,2 +1,0 @@
-ATENÇÃO:
-"O conteúdo do ciclo 3 (NodeJS) e também do ciclo 4 (React), por motivo de um completar o outro, ambos estão nesta mesma pasta chamada "nodejs_react".

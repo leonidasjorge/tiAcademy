@@ -1,0 +1,17 @@
+
+Exercício 2
+Crie um arquivo html com o nome de index. 
+Altere o título da página para “CURSO HTML/CSS –  ESTA É UMA PÁGINA INDEX” (sem as aspas)
+Crie um container DIV que irá conter o texto “Esta é a primeira div” (sem as aspas) 
+Crie um segundo container DIV que irá conter o texto “Esta é a segunda div” (sem as aspas) 
+
+Exercício 3
+Na pasta de nome exercicio
+Crie uma página html com o nome exercicio4 que irá conter as tags de cabeçalho,
+ principal e de rodapé. 
+Crie um div no contexto principal, que irá conter o “Lorem Ipsum” em seu contexto interno.
+A div deverá ter uma altura de 100 pixel e uma largura de 500 pixel.
+Estilize para que a div tenha todas as bodas com 1 pixel na cor preta.
+
+
+    

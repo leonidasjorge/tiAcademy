@@ -1,0 +1,2 @@
+Crie uma div com o tamanho de 800 pixel por 600px, acrescente uma borda 1 pixel, sólida na cor preta
+Coloque uma imagem no background com a proporção de tamanho de 25% repetindo apenas no eixo Y

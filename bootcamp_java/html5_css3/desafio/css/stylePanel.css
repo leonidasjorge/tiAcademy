@@ -54,7 +54,6 @@ header#cabecalho > nav {
 }
 
 header#cabecalho > nav > ul {
-    flex-direction: column;
     width: 100%;
 }
 

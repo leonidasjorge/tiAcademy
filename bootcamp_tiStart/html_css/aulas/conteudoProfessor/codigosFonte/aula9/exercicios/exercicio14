@@ -1,0 +1,5 @@
+1. Crie um elemento HEADER que irá ocupar 100% da área de visualização. Sua altura será de 80 pixels.
+2. A dimensão do elemento de título deverá ter 50% em relação ao HEADER e sua altura será automática.
+3. Atribua a cor rgb de r=216  g=67 b=21 para o HEADER com um canal alfa de 0.3
+4. Atribua uma borda apenas na base inferior para o HEADER de 3 pixels na mesma cor rgb do HEADER,
+mas sem o canal alfa.   

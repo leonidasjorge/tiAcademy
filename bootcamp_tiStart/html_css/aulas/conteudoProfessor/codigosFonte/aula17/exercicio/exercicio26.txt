@@ -1,0 +1,8 @@
+1. Crie um elemento div com as medidas de largura para 150px e altura com a mesma medida. 
+
+2. Atribua a propriedade “radius” setada para 100%.
+
+3. Adicione um background na cor preta.
+
+4. Faça com que ao posicionar o mouse sobre o elemento, altere as medidas 
+para 200x200 pixels e mude a cor do background para vermelho.

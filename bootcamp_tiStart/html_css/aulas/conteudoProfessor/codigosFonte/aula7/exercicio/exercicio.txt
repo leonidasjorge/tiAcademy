@@ -1,0 +1,7 @@
+1. Criar um arquivo externo css em um subdiretório, este subdiretório 
+será chamado de estilo. O nome do arquivo CSS será style. 
+
+2. Criar um reset. 
+3. Criar uma tag de parágrafo que conterá um texto “lorem…”. Neste parágrafo deverá conter  
+uma declaração Inline com o atributo de borda de 1 pixel, solida na cor preta, largura de 300 
+pixel e uma altura automática. 

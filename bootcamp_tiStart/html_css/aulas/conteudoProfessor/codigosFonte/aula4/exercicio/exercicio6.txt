@@ -1,0 +1,7 @@
+1. Crie uma pasta chamada exercício
+2. Na pasta exercício crie uma página index com toda a estrutura html (header, main e footer)
+3. Dê uma dimensão de largura para ambos as tags de 80% e deixe-os centralizados no documento
+4. No header coloque uma altura fixa de 50 pixels e escreva “Minha página html”
+5. No main acrescente 8 parágrafos preenchidos com “Lorem” os parágrafos devem deve ocupar 100% da 
+largura e sua altura será indefinida 
+6. No rodapé coloque seu nome e o ano

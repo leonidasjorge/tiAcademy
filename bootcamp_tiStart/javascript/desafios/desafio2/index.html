@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script type="module" src="js/script.js"></script>
+    <title>Desafio 2 [JS]</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>ME ACHA!</h1>
+            <h2>ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP</h2>
+        </div>
+    </header>
+    <main>
+        <div class="icone">
+            <span class="material-icons">
+                travel_explore
+            </span>
+        </div>
+        
+        <div class="formulario">
+            <form name="cadastro" method="POST">
+                <fieldset>
+                    <label for="cep">Cep</label>
+                    <input type="text" class="inputTexto" id="cep" required name="cep" placeholder="Digite um CEP válido" value="">
+                    
+                    <label for="rua">Logradouro</label>
+                    <input type="text" class="inputTexto" id="logradouro" required name="rua" placeholder="" value="" disabled>
+                    
+                    <label for="bairro">Bairro</label>
+                    <input type="text" class="inputTexto" id="bairro" required name="bairro" placeholder="" value="" disabled>
+                    
+                    <label for="cidade">Cidade</label>
+                    <input type="text" class="inputTexto" id="localidade" required  name="cidade" placeholder="" value="" disabled>
+                    
+                    <label for="estado">Estado</label>
+                    <input type="text" class="inputTexto" id="uf" required      name="estado" placeholder="" value="" disabled>
+                </fieldset>
+
+                <input type="button" class="btnBuscar" id="buscarCep" name="buscar" value="BUSCAR">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

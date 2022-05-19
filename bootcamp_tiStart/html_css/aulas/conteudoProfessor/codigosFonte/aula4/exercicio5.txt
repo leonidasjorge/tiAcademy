@@ -1,0 +1,4 @@
+1. Crie uma pasta chamada exercício
+2. Na pasta exercício crie uma página index com toda a estrutura html (header, main e footer)
+3. Dê uma dimensão de largura para ambos as tags de 80% e deixe-os centralizados no documento
+4. No header escreva: Esta é uma página HTML 
