@@ -1,0 +1,9 @@
+1. Esta afirmação está correta:
+"O 'JS' (Java Script) é uma linguagem interpretada, portanto, irá gerar um código fonte. Isto está correto." Explique.
+Resposta: Na verdade, esta afirmação está parcialmente correta, porque, o JS é uma linguagem de programação interpretada, porém, ela não gera um outro código fonte. Quem faz isso, são os motores compiladores.
+Como o JS é uma linguagem interpretada, não será gerado nenhum outro código, nenhum outro arquivo executável, por exemplo.
+
+2. Ainda nos dias de hoje o JS só pode ser usado por meio de um browser?
+Resposta: Não.
+Todo navegador tem um motor com interpretador do JS. Por exemplo, o navegador "Google Chrome" possui o chamado "motor v8", e, este "v8" é responsável por fazer a interpretação do JS.
+Pode-se sim utilizar o JS fora do navegador, onde, utiliza-se algum tipo de "framework"; por exemplo, o Node JS.

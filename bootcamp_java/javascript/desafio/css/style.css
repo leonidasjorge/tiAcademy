@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#btnEntrar {
+    background-color: rgb(66, 165, 245);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    height: 50px;
+    margin-top: 7px;
+    width: 100%;    
+}
+
+#formularioLogin {
+    padding: 5px;
+}
+
+.flex {
+    display: flex;
+}
+
+.senha, .texto {
+    height: 30px;
+    padding: 4px;
+    width: 100%;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+form {
+    height: auto;
+    padding: 2px;
+    width: 100%;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+label {
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: auto;
+    padding: 2px;
+    width: 100%;
+}

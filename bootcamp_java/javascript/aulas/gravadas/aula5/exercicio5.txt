@@ -1,0 +1,19 @@
+1. Crie um algoritmo que verifique se o valor de uma determinada variável é maior ou menor que o número 10.
+1.1. Se o valor da variável for maior que 10, imprimir no console: "Valor maior que 10.".
+1.2. Se o valor da variável for menor que 10, imprimir no console: "Valor menor que 10.".
+
+Resposta:
+
+<script>
+    var valor = 7;
+
+    if (valor >= 10) {
+        if (valor == 10) {
+            console.log("O valor " + valor + " é IGUAL à 10.")
+        } else {
+            console.log("O valor " + valor + " é MAIOR que 10.")
+        }
+    } else {
+        console.log("O valor " + valor + " é MENOR que 10.")
+    }
+</script>

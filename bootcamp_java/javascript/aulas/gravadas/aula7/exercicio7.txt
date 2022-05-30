@@ -1,0 +1,20 @@
+1. Crie uma função que verifique qual é o maior número entre dois parâmetros e tenha como saída uma impressão no "console.log", informando o resultado.
+
+Resposta:
+
+<script>
+    let maiorNumero = function (numero1, numero2) {
+        if (numero1 >= numero2) {
+            if (numero1 > numero2) {
+                console.log("O número " + numero1 + " é MAIOR que o número " + numero2 + ".");
+            } else {
+                console.log("O número " + numero1 + " é IGUAL ao número " + numero2 + ".");
+            }
+        } else {
+            console.log("O número " + numero2 + " é MAIOR que o número " + numero1 + ".");
+        }
+    }
+    maiorNumero(19, 18);
+    maiorNumero(18, 18);
+    maiorNumero(17, 18);
+</script>

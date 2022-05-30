@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[JS] Aula 6 - Funções e Variáveis</title>
+</head>
+<script>
+    /* Variáveis */
+
+    // var qualquer; // variável "global"
+    // var qq = "variável 'let'"; // variável "global"
+    // const valorConstante = 100;
+
+    // if (true) {
+    //     console.log(valorConstante);
+
+    //     var varDentroDoIf = "Estou dentro do 'if'; sou uma 'var'.";
+    //     let letDentroDoIf = "Estou dentro do 'if'; sou uma 'let'.";
+    // }
+
+    // console.log(varDentroDoIf);
+    // console.log(letDentroDoIf);
+
+    /* Funções */
+
+    // Função LITERAL
+    function soma() {
+        console.log(1 + 3);
+    }
+    // soma();
+
+    function concatenarNome() {
+        var nome      = "Marcelo";
+        var sobrenome = " da Silva";
+
+        alert(nome + sobrenome);
+    }
+    // concatenarNome();
+
+    function novaConcatenarNomes(nome, sobreNome) {
+        document.write(nome + " " + sobreNome);
+    }
+    // novaConcatenarNomes("Leônidas", "Jorge");
+
+    // Função ANÔNIMA
+
+    let semNome = function () {
+        alert("Estou em uma função anônima.");
+    }
+    // semNome();
+
+    let funcaoComParametros = function (idade, idadeParametro) {
+        if (idade >= idadeParametro) {
+            if (idade > idadeParametro) {
+                alert("Você tem idade MAIOR que " + idadeParametro + " anos.");
+            } else {
+                alert("Você tem idade IGUAL à " + idadeParametro + " anos.");
+            }
+        } else {
+            alert("Você tem idade MENOR que " + idadeParametro + " anos.");
+        }
+    }
+    funcaoComParametros(19, 18);
+    funcaoComParametros(18, 18);
+    funcaoComParametros(17, 18);
+</script>
+<body>
+    
+</body>
+</html>

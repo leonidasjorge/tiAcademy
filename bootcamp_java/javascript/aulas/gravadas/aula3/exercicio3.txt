@@ -1,0 +1,13 @@
+1. O que são as variáveis em uma linguagem de programação?
+Resposta: São espaços reservados na memória.
+
+2. Dê um exemplo de um tipo de dado e o que este tipo irá representar.
+Resposta:
+- Um tipo de dado pode ser uma "string".
+A "string" representa uma cadeia de caracteres.
+
+- Um tipo de dado pode ser "inteiro".
+"Inteiro" representa um valor, um número.
+
+- Um tipo de dado pode ser "float/double".
+"float/double" representa números decimais.

@@ -1,0 +1,27 @@
+1. Crie um algoritmo que ao carregar a página, seja solicitado o nome do usuário. Em seguida, sua idade.
+
+1.1. O programa deverá imprimir na página, o nome do usuário, sua idade, e, informar se ele possui idade igual, maior ou menor que 18 anos.
+Por exemplo:
+
+- Nome do usuário  = Fulano.
+- Idade do usuário = 7 - você tem idade menor que 18 anos.
+
+Resposta:
+
+<script>
+    var nome  = prompt("Digite seu nome:");
+    var idade = prompt("Digite sua idade:");
+
+    document.write("- Nome: " + nome + ". <br/>");
+    document.write("- Idade: " + idade + " anos. <br/>");    
+
+    if (idade >= 18) {
+        if (idade == 18) {
+            document.write("-- " + nome + ", você tem 18 anos.")
+        } else {
+            document.write("-- " + nome + ", você tem idade MAIOR que 18 anos.")
+        }
+    } else {
+        document.write("-- " + nome + ", você tem idade MENOR que 18 anos.")
+    }
+</script>

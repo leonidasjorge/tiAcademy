@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./js/scriptPedidos.js"></script>
+    <link rel="stylesheet" href="./css/formularios.css">
+    <title>Pedidos</title>
+</head>
+<body>
+    <main>
+        <div id="content-form" class="flex flex-center-vh">
+            <form action="" class="frm-padrao" style="width: 650px;">
+                <div class="elementos-form">
+                    <div class="flex" id="topo">
+                        <p>Pedidos</p>
+                        <input type="button" name="fechar" value="X" id="btnFechar">
+                    </div>
+                    <label for="txtCodigo">
+                        Código do Cliente
+                        <input type="number" value="" class="campos txt" name="txtCodigo" id="txtCodigo">
+                    </label>
+                    <label for="txtCliente">
+                        Cliente
+                        <input type="text" value="" class="campos txt" name="txtCliente" id="txtCliente" disabled>
+                    </label>
+                    <fieldset>
+                        <p class="fonteAzul">Localizar Produto</p>
+                        <div class="flex" id="localizaProduto">
+                            <input type="number" value="" class="campos txt" name="txtCodigo" id="txtCodigo" style="width: 50px;">
+                            <input type="text" value="" class="campos txt" name="txtDescricao" id="txtDescricao" disabled style="width: 200px;">
+                            <input type="number" value="" class="campos txt" name="txtPreco" id="txtPreco" disabled style="width: 100px;">
+                            <input type="number" value="" class="campos txt" name="txtQuantidade" id="txtQuantidade" style="width: 100px;">
+                            <input type="button" id="lancar" value="Lançar no Pedido" class="controle" style="width: 100%;">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <p class="fonteAzul">Itens do Pedido</p>
+                        <div class="flex" id="localizaProduto">
+                            <table>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Descrição</th>
+                                    <th>Preço</th>
+                                    <th>Qtd</th>
+                                    <th>Sub Total</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Caneta Esferográfica</td>
+                                    <td>0.8</td>
+                                    <td>3</td>
+                                    <td>2.40</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

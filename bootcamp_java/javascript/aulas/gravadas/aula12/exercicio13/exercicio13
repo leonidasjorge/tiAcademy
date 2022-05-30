@@ -1,0 +1,13 @@
+EXERCÍCIO 13
+
+1. O que o manipulador ou função "replace()" efetua em uma String?
+Resposta: Ele vai procurar colocar um parâmetro e ele altera uma palavra ou caractere de uma determinada String, pelo caractere ou palavra que ele esteja buscando.
+
+2. O que o manipulador ou função "sort()" efetua em um array?
+Resposta: Ele ordena um array. Sua ordenação funciona melhor em ordem alfabética do que em ordem numérica.
+
+3. É correto dizer que o JS é uma linguagem orientada a objetos?
+Resposta: Não. Ele tem uma implementação à orientação a objetos, ele cria objetos mas não é necessariamente uma linguagem orientada a objetos, como Java, por exemplo.
+
+4.  Como podemos definir o operador "new"?
+Resposta: É uma palavra reservada que irá instanciar um novo objeto, dar origem a um novo objeto.
