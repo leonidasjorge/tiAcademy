@@ -8,7 +8,7 @@ window.onload = function() {
         document.getElementById("content-form").style.display = "none";
     })
 
-    let codigo     = document.querySelector("#txtCodigo");
+    let codigo     = document.querySelector("#codigoProduto");
     let descricao  = document.querySelector("#txtDescricao");
     let preco      = document.querySelector("#txtPreco");
     let quantidade = document.querySelector("#txtQuantidade");

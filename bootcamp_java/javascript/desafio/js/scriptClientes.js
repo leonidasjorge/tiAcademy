@@ -8,8 +8,8 @@ window.onload = function() {
         document.getElementById("content-form").style.display = "none";
     });
 
-    let codigo   = document.querySelector("#txtCodigo");
-    let nome     = document.querySelector("#txtNome");
+    let codigo   = document.querySelector("#codigoCliente");
+    let nome     = document.querySelector("#nomeCliente");
     let data     = document.querySelector("#txtData");
 
     let avancar  = document.querySelector("#avancar");
