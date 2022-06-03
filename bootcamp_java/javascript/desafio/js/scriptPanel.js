@@ -325,6 +325,11 @@ window.onload = function() {
                     style:'currency',currency: 'BRL'});
         
                 document.getElementById("mostraTotalPedido").style.display = "block";
+
+                codigoProdutoPedido.value = "";
+                descricaoProdutoPedido.value     = "";
+                precoProdutoPedido.value         = "";
+                quantidadeProdutoPedido.value    = "";
             }            
         } else {
             alert('Este item já está cadastrado.')
