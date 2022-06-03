@@ -7,8 +7,6 @@ produtos;
 window.onload = function() {
     // Script "Clientes"
     document.getElementById("content-form-cliente").style.display = "none";
-    document.getElementById("content-form-pedido").style.display = "none";
-    document.getElementById("content-form-produto").style.display = "none";
 
     const aCliente = document.querySelector("#menuCliente");
 
