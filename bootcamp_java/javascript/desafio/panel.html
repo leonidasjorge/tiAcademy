@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="./css/stylePanel.css">
+    <link rel="stylesheet" href="./css/formularios.css">
+    <script type="module" src="./js/scriptPanel.js"></script>
     <title>Painel - FlashJS</title>
 </head>
 <body class="flex">
@@ -13,7 +15,7 @@
         <nav>
             <ul>
                 <li>
-                    <a class="flex" href="./clientes.html" target="forms">
+                    <a class="flex" id="menuCliente" href="#">
                         <span class="material-symbols-outlined iconsList">
                             group_add
                         </span>
@@ -21,7 +23,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="flex" href="./produtos.html" target="forms">
+                    <a class="flex" id="menuProduto" href="#">
                         <span class="material-symbols-outlined iconsList">
                             redeem
                         </span>
@@ -29,7 +31,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="flex" href="./pedidos.html" target="forms">
+                    <a class="flex" id="menuPedido" href="#">
                         <span class="material-symbols-outlined iconsList">
                             shopping_cart
                         </span>
@@ -39,8 +41,124 @@
             </ul>
         </nav>
     </header>
-    <main class="flex">
-        <iframe name="forms" src=""></iframe>
+    <main class="flex flex-center-vh">
+        <section class="formulario" id="secaoCliente">
+            <div id="content-form-cliente" class="flex flex-center-vh">
+                <form action="" class="frm-padrao">
+                    <div class="elementos-form">
+                        <div class="flex" id="topo-cliente">
+                            <p>Clientes</p>
+                            <input type="button" name="fechar" value="X" id="btnFecharCliente">
+                        </div>
+                        <label for="codigoCliente">
+                            Código
+                            <input type="number" value="" class="campos txt" name="codigoCliente" id="codigoCliente" disabled>
+                        </label>
+                        <label for="nomeCliente">
+                            Nome
+                            <input type="text" value="" class="campos txt" name="nomeCliente" id="nomeCliente">
+                        </label>
+                        <label for="txtData">
+                            Data Cadastro
+                            <input type="text" value="" class="campos txt" name="txtData" id="txtData">
+                        </label>
+                        <div class="display-btns flex">
+                            <div class="btns"> 
+                                <input type="button" value="<" class="controle" id="voltar">
+                                <input type="button" value=">" class="controle" id="avancar">
+                            </div>
+                            <div class="btns flex flex-end"> 
+                                <input type="button" id="novo" value="Novo" class="controle">
+                                <input type="button" id="salvar" value="Salvar" class="controle" >
+                            </div> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="formulario" id="secaoProduto">
+            <div id="content-form-produto" class="flex flex-center-vh">
+                <form action="" class="frm-padrao">
+                    <div class="elementos-form">
+                        <div class="flex" id="topo-produto">
+                            <p>Produtos</p>
+                            <input type="button" name="fechar" value="X" id="btnFecharProduto">
+                        </div>
+                        <label for="codigoProduto">
+                            Código
+                            <input type="number" value="" class="campos txt" name="codigoProduto" id="codigoProduto" disabled>
+                        </label>
+                        <label for="txtDescricao">
+                            Descrição
+                            <input type="text" value="" class="campos txt" name="txtDescricao" id="txtDescricao">
+                        </label>
+                        <label for="txtPreco">
+                            Preço
+                            <input type="number" value="" class="campos txt" name="txtPreco" id="txtPreco">
+                        </label>
+                        <label for="txtQuantidade">
+                            Quantidade
+                            <input type="number" value="" class="campos txt" name="txtQuantidade" id="txtQuantidade">
+                        </label>
+                        <div class="display-btns flex">
+                            <div class="btns"> 
+                                <input type="button" value="<" class="controle" id="voltarProduto">
+                                <input type="button" value=">" class="controle" id="avancarProduto">
+                            </div>
+                            <div class="btns flex flex-end"> 
+                                <input type="button" id="novoProduto" value="Novo" class="controle">
+                                <input type="button" id="salvarProduto" value="Salvar" class="controle" >
+                            </div> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="formulario" id="secaoPedido">
+            <div id="content-form-pedido" class="flex flex-center-vh">
+                <form action="" class="frm-padrao" style="width: 650px;">
+                    <div class="elementos-form">
+                        <div class="flex" id="topo-pedido">
+                            <p>Pedidos</p>
+                            <input type="button" name="fechar" value="X" id="btnFecharPedido">
+                        </div>
+                        <label for="codigoClientePedido">
+                            Código do Cliente
+                            <input type="number" value="" class="campos txt" name="codigoClientePedido" id="codigoClientePedido" required placeholder="Informe o código do Cliente" autofocus>
+                        </label>
+                        <label for="nomeClientePedido">
+                            Cliente
+                            <input type="text" value="" class="campos txt" name="nomeClientePedido" id="nomeClientePedido" disabled>
+                        </label>
+                        <fieldset>
+                            <p class="fonteAzul">Localizar Produto</p>
+                            <div class="flex" id="localizaProduto">
+                                <input type="number" value="" class="campos txt" name="codigoProdutoPedido" id="codigoProdutoPedido" style="width: 50px;">
+                                <input type="text" value="" class="campos txt" name="descricaoProdutoPedido" id="descricaoProdutoPedido" disabled style="width: 200px;">
+                                <input type="text" value="" class="campos txt" name="precoProdutoPedido" id="precoProdutoPedido" disabled style="width: 100px;">
+                                <input type="number" value="" class="campos txt" name="quantidadeProdutoPedido" id="quantidadeProdutoPedido" style="width: 100px;">
+                                <input type="button" id="btnLancarPedido" value="Lançar no Pedido" class="controle" style="width: 100%;">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <p class="fonteAzul">Itens do Pedido</p>
+                            <div class="flex" id="itensPedido">
+                                <table id="tblPedidos">
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Descrição</th>
+                                        <th>Preço</th>
+                                        <th>Qtd</th>
+                                        <th>Sub Total</th>
+                                    </tr>
+                                </table>
+                                <input type="text" class="campos txt" id="mostraTotalPedido" name="mostraTotalPedido" value="" disabled>
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>

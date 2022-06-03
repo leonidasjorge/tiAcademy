@@ -41,11 +41,15 @@
     width: 400px;
 }
 
-.frm-padrao > div.elementos-form > div#topo {
+.frm-padrao > div.elementos-form > div#topo-cliente,
+.frm-padrao > div.elementos-form > div#topo-pedido,
+.frm-padrao > div.elementos-form > div#topo-produto {
     justify-content: space-between;
 }
 
-.frm-padrao > div.elementos-form > div#topo > p,
+.frm-padrao > div.elementos-form > div#topo-cliente > p,
+.frm-padrao > div.elementos-form > div#topo-pedido > p,
+.frm-padrao > div.elementos-form > div#topo-produto > p,
 .frm-padrao > div.elementos-form > label {
     display: flex;  
     flex-direction: column;
@@ -54,14 +58,18 @@
     width: 100%;
 }
 
-.frm-padrao > div.elementos-form > div#topo > p {
+.frm-padrao > div.elementos-form > div#topo-cliente > p,
+.frm-padrao > div.elementos-form > div#topo-pedido > p,
+.frm-padrao > div.elementos-form > div#topo-produto > p {
     font-size: 1.2rem;
     font-weight: bolder;
     margin-bottom: 20px;
     text-decoration: underline;
 }
 
-.frm-padrao > div.elementos-form > div#topo > #btnFechar {
+.frm-padrao > div.elementos-form > div#topo-cliente > #btnFecharCliente,
+.frm-padrao > div.elementos-form > div#topo-pedido > #btnFecharPedido,
+.frm-padrao > div.elementos-form > div#topo-produto > #btnFecharProduto {
     background-color: #fff;
     border: none;
     color: red;
@@ -129,29 +137,29 @@ fieldset > div > label {
     width: 50%;
 }
 
-#avancar, #voltar, #novo, #salvar {
+#avancar, #avancarProduto, #voltar, #voltarProduto, #novo, #novoProduto, #salvar, #salvarProduto {
     border: none;
     border-radius: 5px;
     color: #fff;
 }
 
-#avancar {
+#avancar, #avancarProduto {
     background-color: #663399;
     font-weight: bold;
     width: 50px;
 }
 
-#voltar {
+#voltar, #voltarProduto {
     background-color: #663399;
     font-weight: bold;
     width: 50px;
 }
 
-#novo {
+#novo, #novoProduto {
     background-color: #007bff;
 }
 
-#salvar {
+#salvar, #salvarProduto {
     background-color: #28a745;
 }
 
