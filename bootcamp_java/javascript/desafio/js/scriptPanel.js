@@ -230,14 +230,14 @@ window.onload = function() {
                 alert("Informe o código do cliente.");
                 
                 codigoClientePedido.value = "";
-                nomeClientePedido.value = "";
+                nomeClientePedido.value   = "";
 
                 document.getElementById("btnLancarPedido").focus();
             } else {
                 alert("O código do cliente informado não existe.");
                 
                 codigoClientePedido.value = "";
-                nomeClientePedido.value = "";
+                nomeClientePedido.value   = "";
 
                 document.getElementById("btnLancarPedido").focus();
             }
@@ -261,25 +261,25 @@ window.onload = function() {
             if (codigoProdutoPedido.value == "") {
                 alert("Informe o código do produto.");
 
-                codigoProdutoPedido.value = "";
-                descricaoProdutoPedido.value     = "";
-                precoProdutoPedido.value         = "";
-                quantidadeProdutoPedido.value    = "";
+                codigoProdutoPedido.value     = "";
+                descricaoProdutoPedido.value  = "";
+                precoProdutoPedido.value      = "";
+                quantidadeProdutoPedido.value = "";
 
                 document.getElementById("btnLancarPedido").focus();
             } else {
                 alert("O código do produto informado não existe.");
                 
-                codigoProdutoPedido.value = "";
-                descricaoProdutoPedido.value     = "";
-                precoProdutoPedido.value         = "";
-                quantidadeProdutoPedido.value    = "";
+                codigoProdutoPedido.value     = "";
+                descricaoProdutoPedido.value  = "";
+                precoProdutoPedido.value      = "";
+                quantidadeProdutoPedido.value = "";
 
                 document.getElementById("btnLancarPedido").focus();
             }
         } else {
-            descricaoProdutoPedido.value         = produtos[p].descProduto;
-            precoProdutoPedido.value             = Number(produtos[p].precoProduto).toFixed(2);
+            descricaoProdutoPedido.value      = produtos[p].descProduto;
+            precoProdutoPedido.value          = Number(produtos[p].precoProduto).toFixed(2);
         }        
     });
     
@@ -326,10 +326,10 @@ window.onload = function() {
         
                 document.getElementById("mostraTotalPedido").style.display = "block";
 
-                codigoProdutoPedido.value = "";
-                descricaoProdutoPedido.value     = "";
-                precoProdutoPedido.value         = "";
-                quantidadeProdutoPedido.value    = "";
+                codigoProdutoPedido.value     = "";
+                descricaoProdutoPedido.value  = "";
+                precoProdutoPedido.value      = "";
+                quantidadeProdutoPedido.value = "";
             }            
         } else {
             alert('Este item já está cadastrado.')
