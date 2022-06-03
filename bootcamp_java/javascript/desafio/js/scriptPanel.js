@@ -279,7 +279,7 @@ window.onload = function() {
             }
         } else {
             descricaoProdutoPedido.value         = produtos[p].descProduto;
-            precoProdutoPedido.value             = produtos[p].precoProduto.toFixed(2);
+            precoProdutoPedido.value             = Number(produtos[p].precoProduto).toFixed(2);
         }        
     });
     
