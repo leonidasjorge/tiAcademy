@@ -23,7 +23,7 @@ public class MediaAlunosFor {
 			double media = (total / contador);
 			
 			System.out.printf("- Total de Alunos da Classe: %d. \n", contador);
-			System.out.printf("\n- Total de notas dos alunos %.1f. \n", total);
+			System.out.printf("- Total de notas dos alunos %.1f. \n", total);
 			System.out.printf("- Média da classe é %.1f. \n", media);
 			
 			sc.close();

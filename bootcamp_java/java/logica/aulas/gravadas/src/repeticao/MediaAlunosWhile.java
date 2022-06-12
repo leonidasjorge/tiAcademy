@@ -2,7 +2,7 @@ package repeticao;
 
 import java.util.Scanner;
 
-public class MediaAlunos {
+public class MediaAlunosWhile {
 
 	public static void main(String[] args) {
 		
