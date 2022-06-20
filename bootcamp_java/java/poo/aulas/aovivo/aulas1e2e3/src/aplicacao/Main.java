@@ -1,6 +1,5 @@
 package aplicacao;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 import entidades.Veiculo;
@@ -8,7 +7,6 @@ import entidades.Veiculo;
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Locale.setDefault(new Locale("pt", "BR"));
 		
 		double consumo, km, tanque, valor;
 		int pas;
