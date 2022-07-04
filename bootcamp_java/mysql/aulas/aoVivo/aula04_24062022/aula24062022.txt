@@ -1,0 +1,57 @@
+1 => Criar Base de Dados:
+
+create database turma8;
+
+2 => Ativar para usar o banco de dados que neste caso, foi criado anteriormente:
+
+use turma8;
+
+3 => Agora, criar as tabelas do banco de dados:
+
+Tabela 1:
+
+use turma8;
+create table fornecedores(
+	id int PRIMARY KEY AUTO_INCREMENT,
+	nome varchar(40) NOT null,
+	ie varchar(14)
+);
+
+Tabela 2:
+
+use turma8;
+create table fornecedores(
+	id int PRIMARY KEY AUTO_INCREMENT,
+	nome varchar(40) NOT null
+);
+
+Tabela 3:
+
+use turma8;
+create table fornecedores(
+	id int PRIMARY KEY AUTO_INCREMENT,
+	nome varchar(40) NOT null
+);
+
+Tabela 4:
+
+use turma8;
+create table ordemCompra(
+	id int PRIMARY KEY AUTO_INCREMENT,
+	data date NOT null,
+    idFornecedor int NOT null,
+    CONSTRAINT fk_fornecedorOC FOREIGN KEY (idFornecedor) REFERENCES fornecedores (id)
+);
+
+Tabela 5:
+
+USE turma8;
+CREATE TABLE itemOrdemCompra(
+	idOrdemCompra int NOT null,
+    idMaterial int NOT null,
+    valor float(6,2) NOT null,
+    quantidade int NOT null,
+    CONSTRAINT fk_itemOC FOREIGN KEY (idOrdemCompra) REFERENCES OrdemCompra (id),
+    CONSTRAINT fk_itemMaterial FOREIGN KEY (idMaterial) REFERENCES material (id),
+    CONSTRAINT pk_ordemCompra PRIMARY KEY (idOrdemCompra, idMaterial)
+);
