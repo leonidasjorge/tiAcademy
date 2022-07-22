@@ -1,8 +1,5 @@
 package br.com.tiacademy.catalogo.controller;
 
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,15 +15,19 @@ import br.com.tiacademy.catalogo.repository.ArtistaRepository;
 
 @RestController // 1º Estou dizendo para o Spring Boot que esta classe é o "controller";
 @RequestMapping("/artista") // 2º Estou definindo o "recurso"; "a página/diretório" com seu conteúdo;
-public class ArtistaController {
+public class ArtistaController extends ControllerCatalogo<Artista, Long>{
 
-	@Autowired
-	private ArtistaRepository artistaRepository;
-	
-	// 3º Esta anotação serve para que o "controller" saiba que este método é o que será chamado no "GET";
-	@GetMapping
-	public List<Artista> todosArtistas() {		
-		return artistaRepository.findAll();
+	public ArtistaRepository getRepository() {
+		return (ArtistaRepository) this.repository;
 	}
-
+	
+	@GetMapping("/gil")
+	public Artista artistaGil() {
+		return this.getRepository().consultarPeloNome("Gilberto Gil");
+	}
+	
+	@GetMapping("/djavan")
+	public Artista artistaDjavan() {
+		return this.getRepository().consultarPeloNome("Djavan");
+	}	
 }

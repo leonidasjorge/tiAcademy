@@ -21,4 +21,30 @@
     		</column>
     	</createTable>
     </changeSet>
+    
+        <changeSet id="2" author="leonidas">
+    	<preConditions onFail="MARK_RAN" onFailMessage="a tabela gravadora já existe">
+    		<not>
+    			<tableExists tableName="gravadora"/>
+    		</not>
+    	</preConditions>
+    	
+    	<createTable tableName="gravadora">
+    		<column name="id" type="INT">
+    			<constraints nullable="false"
+    						primaryKey="true"
+    						primaryKeyName="pk_gravadora"/>
+    		</column>
+    		
+    		<column name="nome" type="VARCHAR(255)">
+    			<constraints nullable="false"/>
+    		</column>
+    		
+    		<column name="ano" type="INT"/>
+    		
+    		<column name="cidade" type="VARCHAR(255)"/>
+    		
+    		<column name="uf" type="VARCHAR(255)"/>
+    	</createTable>
+    </changeSet>
 </databaseChangeLog>
