@@ -4,25 +4,7 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.12.xsd">
     
-    <!-- "changeSet" é o bloco de código que será executado; -->
-    <changeSet id="1" author="leonidas">
-    	<preConditions onFail="MARK_RAN" onFailMessage="a tabela artista já existe">
-    		<not>
-    			<tableExists tableName="artista"/>
-    		</not>
-    	</preConditions>
-    	
-    	<createTable tableName="artista">
-    		<column name="id" type="INT">
-    			<constraints nullable="false" primaryKey="true" primaryKeyName="pk_artista"/>
-    		</column>
-    		<column name="nome" type="VARCHAR(255)">
-    			<constraints nullable="false"/>
-    		</column>
-    	</createTable>
-    </changeSet>
-    
-        <changeSet id="2" author="leonidas">
+	<changeSet id="1" author="leonidas">
     	<preConditions onFail="MARK_RAN" onFailMessage="a tabela gravadora já existe">
     		<not>
     			<tableExists tableName="gravadora"/>
@@ -47,4 +29,27 @@
     		<column name="uf" type="VARCHAR(255)"/>
     	</createTable>
     </changeSet>
+    
+    <changeSet id="2" author="leonidas">
+    	<preConditions onFail="MARK_RAN" onFailMessage="a tabela artista já existe">
+    		<not>
+    			<tableExists tableName="artista"/>
+    		</not>
+    	</preConditions>
+    	
+    	<createTable tableName="artista">
+    		<column name="id" type="INT">
+    			<constraints nullable="false" primaryKey="true" primaryKeyName="pk_artista"/>
+    		</column>
+    		<column name="nome" type="VARCHAR(255)">
+    			<constraints nullable="false"/>
+    		</column>
+    		<column name="gravadora_id" type="INT">
+    			<constraints nullable="true"
+    						foreignKeyName="fk_artista_gravadora"
+    						referencedTableName="gravadora"
+    						referencedColumnNames="id"/>
+    		</column>    		
+    	</createTable>
+    </changeSet>    
 </databaseChangeLog>

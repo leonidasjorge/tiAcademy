@@ -1,11 +1,23 @@
 package br.com.tiacademy.catalogo.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Transient;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@Data
 @Entity
+@NoArgsConstructor
 public class Gravadora {
 	
 	@Id
@@ -17,57 +29,12 @@ public class Gravadora {
 	private String cidade;
 	private String uf;
 	
-	public Gravadora() {
-		
-	}
+	@OneToMany(mappedBy = "gravadora")
+	private List<Artista> artistas = new ArrayList<Artista>();
 	
-	public Gravadora(Long id, String nome, Integer ano, String cidade, String uf) {
-		super();
-		this.id = id;
-		this.nome = nome;
-		this.ano = ano;
-		this.cidade = cidade;
-		this.uf = uf;
-	}
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public Integer getAno() {
-		return ano;
-	}
-
-	public void setAno(Integer ano) {
-		this.ano = ano;
-	}
-
-	public String getCidade() {
-		return cidade;
-	}
-
-	public void setCidade(String cidade) {
-		this.cidade = cidade;
-	}
-
-	public String getUf() {
-		return uf;
-	}
-
-	public void setUf(String uf) {
-		this.uf = uf;
+	@Transient
+	public Integer getCountArtistas() {
+		return artistas.size();
 	}
 	
 }
