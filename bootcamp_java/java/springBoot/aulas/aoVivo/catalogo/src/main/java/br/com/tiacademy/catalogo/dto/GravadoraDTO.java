@@ -1,4 +1,4 @@
-package dto;
+package br.com.tiacademy.catalogo.dto;
 
 import java.io.Serializable;
 import java.util.ArrayList;

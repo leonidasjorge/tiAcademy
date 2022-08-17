@@ -1,4 +1,4 @@
-package dto;
+package br.com.tiacademy.vendas.dto;
 
 import java.io.Serializable;
 
@@ -9,8 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @NoArgsConstructor
-public class ArtistaDTO implements Serializable {
+public class VendedorDTO implements Serializable {
 
 	private Long id;
 	private String nome;
+	
 }

@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.tiacademy.catalogo.dto.ArtistaDTO;
+import br.com.tiacademy.catalogo.dto.GravadoraDTO;
 import br.com.tiacademy.catalogo.entity.Gravadora;
 import br.com.tiacademy.catalogo.repository.GravadoraRepository;
-import dto.ArtistaDTO;
-import dto.GravadoraDTO;
 
 @RestController
 @RequestMapping("/gravadora")
